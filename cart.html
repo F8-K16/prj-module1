@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Product Cart | WowWraps Restaurant</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;600;700&family=Playball&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./template/header.html");
+        </script>
+        <main>
+            <div class="container">
+                <div class="cart">
+                    <div class="cart__top">
+                        <div class="row row-cols-2 align-center d-md-none">
+                            <div class="col-5 col-xl-6 col-lg-5">
+                                <h3 class="cart__title cart__title--center">Food</h3>
+                            </div>
+                            <div class="col-6 offset-1 col-xl-6 offset-xl-0 col-lg-7 col-md-9">
+                                <div class="cart__top-info">
+                                    <h3 class="cart__title">Price</h3>
+                                    <h3 class="cart__title">Quantity</h3>
+                                    <h3 class="cart__title">Subtotal</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separate d-md-none"></div>
+                        <div class="row row-cols-2 align-center">
+                            <div class="col-5 col-xl-6 col-lg-5 col-md-4">
+                                <div class="cart__image">
+                                    <button class="cart__ctrl">
+                                        <img src="./assets/icons/trash.svg" alt="" />
+                                    </button>
+                                    <img src="./assets/img/food/food-1.png" alt="" class="cart__img" />
+                                    <p class="cart__desc">Crispy chicken breasts</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6 offset-1 col-xl-6 offset-xl-0 col-lg-7 col-md-8">
+                                <div class="cart__top-info">
+                                    <p class="cart__desc"><strong>$24.99</strong></p>
+                                    <div class="product__input cart__input">
+                                        <button class="product__input-btn">
+                                            <img src="./assets/icons/minus.svg" alt="" />
+                                        </button>
+                                        <span>1</span>
+                                        <button class="product__input-btn">
+                                            <img src="./assets/icons/plus.svg" alt="" />
+                                        </button>
+                                    </div>
+                                    <p class="cart__desc">$24.99</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="separate"></div>
+                        <div class="row row-cols-2 align-center">
+                            <div class="col-5 col-xl-6 col-lg-5 col-md-4">
+                                <div class="cart__image">
+                                    <button class="cart__ctrl">
+                                        <img src="./assets/icons/trash.svg" alt="" />
+                                    </button>
+                                    <img src="./assets/img/food/food-2.png" alt="" class="cart__img" />
+                                    <p class="cart__desc">Spaghetti Napoletana</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6 offset-1 col-xl-6 offset-xl-0 col-lg-7 col-md-8">
+                                <div class="cart__top-info">
+                                    <p class="cart__desc"><strong>$59.00</strong></p>
+                                    <div class="product__input cart__input">
+                                        <button class="product__input-btn">
+                                            <img src="./assets/icons/minus.svg" alt="" />
+                                        </button>
+                                        <span>1</span>
+                                        <button class="product__input-btn">
+                                            <img src="./assets/icons/plus.svg" alt="" />
+                                        </button>
+                                    </div>
+                                    <p class="cart__desc">$59.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separate"></div>
+                        <div class="row row-cols-2 align-center">
+                            <div class="col-5 col-xl-6 col-lg-5 col-md-4">
+                                <div class="cart__image">
+                                    <button class="cart__ctrl">
+                                        <img src="./assets/icons/trash.svg" alt="" />
+                                    </button>
+                                    <img src="./assets/img/food/food-3.png" alt="" class="cart__img" />
+                                    <p class="cart__desc">New Lubina Marinada</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6 offset-1 col-xl-6 offset-xl-0 col-lg-7 col-md-8">
+                                <div class="cart__top-info">
+                                    <p class="cart__desc"><strong>$40.00</strong></p>
+                                    <div class="product__input cart__input">
+                                        <button class="product__input-btn">
+                                            <img src="./assets/icons/minus.svg" alt="" />
+                                        </button>
+                                        <span>1</span>
+                                        <button class="product__input-btn">
+                                            <img src="./assets/icons/plus.svg" alt="" />
+                                        </button>
+                                    </div>
+                                    <p class="cart__desc">$40.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separate"></div>
+                        <div class="cart__act">
+                            <div class="cart__act-left">
+                                <button class="cart__btn cart__btn-coupon">Coupon code</button>
+                                <button class="cart__btn cart__btn-apply">Apply coupon</button>
+                            </div>
+                            <div class="cart__act-right">
+                                <button class="cart__btn cart__btn-update">Update Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart__bottom">
+                        <h2 class="cart__bottom-title">Cart totals</h2>
+                        <div class="cart__bottom-inner">
+                            <div class="row row cols-2">
+                                <div class="col-4">
+                                    <h3 class="cart__bottom-text cart__bottom-text--no-margin">Subtotal</h3>
+                                </div>
+                                <div class="col">
+                                    <p class="cart__bottom-info cart__bottom-info--no-margin">$123.99</p>
+                                </div>
+                            </div>
+                            <div class="row row cols-2">
+                                <div class="col-4">
+                                    <h3 class="cart__bottom-text cart__bottom-text--first">Shipping</h3>
+                                </div>
+                                <div class="col">
+                                    <p class="cart__bottom-info cart__bottom-info--first">
+                                        Flat rate: <span>$5.00</span>
+                                    </p>
+                                    <p class="cart__bottom-info">Shipping to <span>New South Wales</span></p>
+                                    <p class="cart__bottom-info cart__bottom-info--inline">
+                                        Change address
+                                        <img src="./assets/icons/truck.svg" alt="" />
+                                    </p>
+                                    <form class="form">
+                                        <div class="form__group cart__form-group">
+                                            <label for="country" class="form__label form__label--small">
+                                                Country
+                                            </label>
+                                            <div class="form__text-input form__text-input--small">
+                                                <input
+                                                    type="text"
+                                                    id="country"
+                                                    placeholder="Country"
+                                                    class="form__input"
+                                                    toggle-target="#country-dialog"
+                                                    required
+                                                />
+                                                <label for="country">
+                                                    <img
+                                                        src="./assets/icons/arrow-down.svg"
+                                                        alt=""
+                                                        class="icon form__select-icon"
+                                                    />
+                                                </label>
+                                                <!-- Form dialog -->
+                                                <div id="country-dialog" class="form__select-dialog hide">
+                                                    <h2 class="form__dialog-heading d-none d-md-block">Country</h2>
+                                                    <ul class="form__option-list">
+                                                        <li class="form__option">Australia</li>
+                                                        <li class="form__option form__option--current">VietNam</li>
+                                                        <li class="form__option">USA</li>
+                                                        <li class="form__option">Italia</li>
+                                                        <li class="form__option">France</li>
+                                                        <li class="form__option">Sweden</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form__group cart__form-group">
+                                            <label for="city" class="form__label form__label--small"> City </label>
+                                            <div class="form__text-input form__text-input--small">
+                                                <input
+                                                    type="text"
+                                                    placeholder="City"
+                                                    name=""
+                                                    id="city"
+                                                    class="form__input"
+                                                    toggle-target="#city-dialog"
+                                                    required
+                                                />
+                                                <label for="city">
+                                                    <img
+                                                        src="./assets/icons/arrow-down.svg"
+                                                        alt=""
+                                                        class="icon form__select-icon"
+                                                    />
+                                                </label>
+                                                <!-- Form dialog -->
+                                                <div id="city-dialog" class="form__select-dialog hide">
+                                                    <h2 class="form__dialog-heading d-none d-md-block">City</h2>
+                                                    <ul class="form__option-list">
+                                                        <li class="form__option">Ho Chi Minh</li>
+                                                        <li class="form__option form__option--current">
+                                                            New South Wales
+                                                        </li>
+                                                        <li class="form__option">Ha Noi</li>
+                                                        <li class="form__option">Hai Phong</li>
+                                                        <li class="form__option">Hue</li>
+                                                        <li class="form__option">Da Nang</li>
+                                                        <li class="form__option">New South Wales</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form__group contact__form-group cart__form-group">
+                                            <label for="suburb" class="form__label"> Suburb </label>
+                                            <div class="form__text-input">
+                                                <input
+                                                    type="text"
+                                                    class="form__input"
+                                                    name=""
+                                                    placeholder="Enter your Suburb address"
+                                                    id="suburb"
+                                                    required
+                                                />
+                                                <img
+                                                    src="./assets/icons/form-error.svg"
+                                                    alt=""
+                                                    class="form__input-icon-error"
+                                                />
+                                            </div>
+                                            <p class="form__error">Please fill this form</p>
+                                        </div>
+                                        <div class="form__group contact__form-group cart__form-group">
+                                            <label for="postcode" class="form__label"> Postcode </label>
+                                            <div class="form__text-input">
+                                                <input
+                                                    type="number"
+                                                    class="form__input"
+                                                    name=""
+                                                    placeholder="Enter your Postcode"
+                                                    id="postcode"
+                                                    required
+                                                />
+                                                <img
+                                                    src="./assets/icons/form-error.svg"
+                                                    alt=""
+                                                    class="form__input-icon-error"
+                                                />
+                                            </div>
+                                            <p class="form__error">Please fill this form</p>
+                                        </div>
+                                        <button class="cart__btn cart__btn-update form__submit-btn">Update</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row row cols-2">
+                                <div class="col-4">
+                                    <h3 class="cart__bottom-text cart__bottom-text--first">Total</h3>
+                                </div>
+                                <div class="col">
+                                    <p class="cart__bottom-info cart__bottom-info--first">$128.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="cart__btn cart__btn-checkout">
+                            <a href="./checkout.html">Proceed to Checkout</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+
+        <!-- Modal : confirm remove shipping card item -->
+        <!-- <div id="delete-confirm" class="modal modal--small hide">
+            <div class="modal__content">
+                <div class="modal__text">Do you want to delete this item from shopping cart?</div>
+                <div class="modal__bottom">
+                    <button class="modal__btn js-toggle" toggle-target="#delete-confirm">Cancel</button>
+                    <button class="modal__btn btn--danger js-toggle" toggle-target="#delete-confirm">Delete</button>
+                </div>
+            </div>
+            <div class="modal__overlay js-toggle" toggle-target="#delete-confirm"></div>
+        </div> -->
+    </body>
+</html>

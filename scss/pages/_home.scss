@@ -1,0 +1,9 @@
+@use "../abstracts";
+
+.home__container {
+    margin-top: 26px;
+
+    @include abstracts.screen(sm) {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Booking | WowWraps Restaurant</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;600;700&family=Playball&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./template/header.html");
+        </script>
+        <main class="booking">
+            <div class="booking__inner">
+                <h1 class="booking__title">Online Reservation</h1>
+                <p class="booking__desc">Book your table for lunch or dinner.</p>
+                <form action="" class="row row-cols-3 row-cols-md-2 row-cols-sm-1 booking__form g-3">
+                    <div class="booking__form-group">
+                        <div class="booking__form-text-input">
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="Your name"
+                                class="form__input booking__form-input"
+                                required
+                                autofocus
+                            />
+                            <img src="./assets/icons/profile.svg" alt="" class="booking__form-input-icon" />
+                        </div>
+                        <p class="form__error">Please fill your name</p>
+                    </div>
+
+                    <div class="booking__form-group">
+                        <div class="booking__form-text-input">
+                            <input
+                                type="tel"
+                                name=""
+                                id=""
+                                placeholder="Phone number"
+                                class="form__input booking__form-input"
+                                minlength="10"
+                            />
+                            <img src="./assets/icons/phone.svg" alt="" class="booking__form-input-icon" />
+                        </div>
+                        <p class="form__error">Please fill correct your phone number</p>
+                    </div>
+
+                    <div class="booking__form-group">
+                        <div class="booking__form-text-input">
+                            <input
+                                type="email"
+                                name=""
+                                id=""
+                                placeholder="Email address"
+                                class="form__input booking__form-input"
+                                [a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$
+                            />
+                            <img src="./assets/icons/message.svg" alt="" class="booking__form-input-icon" />
+                        </div>
+                        <p class="form__error">Email is not correct format</p>
+                    </div>
+                    <div class="booking__form-group">
+                        <div class="booking__form-text-input">
+                            <select
+                                name="guests"
+                                id="guests"
+                                class="form__input booking__form-input booking__form-select"
+                            >
+                                <option class="booking__form-option" value="1">1 Person</option>
+                                <option class="booking__form-option" value="2">2 People</option>
+                                <option class="booking__form-option" value="3">3 People</option>
+                                <option class="booking__form-option" value="4">4 People</option>
+                                <option class="booking__form-option" value="5">5 People</option>
+                                <option class="booking__form-option" value="other">More</option>
+                            </select>
+                            <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                        </div>
+                        <p class="form__error">Please select number of people</p>
+                    </div>
+                    <div class="booking__form-group">
+                        <div class="booking__form-text-input">
+                            <input type="date" id="datepicker" style="visibility: hidden; position: absolute" />
+                            <div class="booking__form-text-input--date">
+                                <input
+                                    type="date"
+                                    name="date"
+                                    id="datepicker"
+                                    class="form__input booking__form-input"
+                                />
+                                <img src="./assets/icons/calendar.svg" alt="" class="booking__form-input-icon" />
+                            </div>
+                            <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                        </div>
+                        <p class="form__error">Please choose the day you will come our restaurant</p>
+                    </div>
+                    <div class="booking__form-group">
+                        <div class="booking__form-text-input">
+                            <input type="time" name="time" id="timepicker" class="form__input booking__form-input" />
+                            <img src="./assets/icons/time.svg" alt="" class="booking__form-input-icon" />
+                        </div>
+                        <p class="form__error">Please choose the day you will come our restaurant</p>
+                    </div>
+
+                    <div class="booking__form-bottom">
+                        <button class="booking__form-btn form__submit-btn">Reserve Your Table Now</button>
+                    </div>
+                </form>
+            </div>
+            <div class="container">
+                <!-- Agency -->
+                <div class="agency">
+                    <div class="row row-cols-3 row-cols-lg-1 gy-lg-5">
+                        <div class="col">
+                            <article class="agency__info">
+                                <h2 class="agency__title">London</h2>
+                                <address class="agency__address">Silk St, Barbican, London EC2Y 8DS</address>
+                                <a href="mailto:wowwrap@gmail.com" class="agency__email"> wowwrap@gmail.com </a>
+                                <a href="tel:+12 345 6789 4612" class="agency__tel"> +08 345 6789 4612 </a>
+                            </article>
+                            <a href="#!" class="agency__direct">Get Directions</a>
+                        </div>
+                        <div class="col">
+                            <article class="agency__info">
+                                <h2 class="agency__title">Sydney</h2>
+                                <address class="agency__address">Silk St, Barbican, London EC2Y 8DS</address>
+                                <a href="mailto:wowwrap@gmail.com" class="agency__email"> wowwrap@gmail.com </a>
+                                <a href="tel:+12 345 6789 4612" class="agency__tel"> +08 345 6789 4612 </a>
+                            </article>
+                            <a href="#!" class="agency__direct">Get Directions</a>
+                        </div>
+                        <div class="col">
+                            <article class="agency__info">
+                                <h2 class="agency__title">Tokyo</h2>
+                                <address class="agency__address">Silk St, Barbican, London EC2Y 8DS</address>
+                                <a href="mailto:wowwrap@gmail.com" class="agency__email"> wowwrap@gmail.com </a>
+                                <a href="tel:+12 345 6789 4612" class="agency__tel"> +08 345 6789 4612 </a>
+                            </article>
+                            <a href="#!" class="agency__direct">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+    </body>
+</html>

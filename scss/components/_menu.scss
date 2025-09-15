@@ -1,0 +1,176 @@
+@use "../abstracts";
+
+.menu {
+    margin-top: 26px;
+    padding: 70px 0;
+
+    @include abstracts.screen(xl) {
+        margin-top: 0;
+        padding: 40px 0;
+    }
+
+    &__choice {
+        &-group {
+            position: relative;
+            @include abstracts.flexCenter;
+            gap: 60px;
+
+            @include abstracts.screen(lg) {
+                justify-content: space-between;
+            }
+
+            @include abstracts.screen(md) {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            @include abstracts.screen(sm) {
+                column-gap: 60px;
+            }
+        }
+
+        &-food {
+            position: relative;
+            font-family: "Libre Bodoni", serif;
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 40px;
+            opacity: 0.8;
+            cursor: pointer;
+
+            @include abstracts.screen(md) {
+                font-size: 2.8rem;
+            }
+        }
+
+        &-input {
+            display: none;
+        }
+
+        &--all:checked ~ .menu__choice .menu__choice--all,
+        &--appetizer:checked ~ .menu__choice .menu__choice--appetizer,
+        &--soup:checked ~ .menu__choice .menu__choice--soup,
+        &--dessert:checked ~ .menu__choice .menu__choice--dessert,
+        &--drink:checked ~ .menu__choice .menu__choice--drink {
+            color: #fb8f2c;
+            border-bottom: 1px solid #fb8f2c;
+            opacity: 1;
+        }
+
+        &--appetizer:checked ~ .menu__group .menu__list {
+            transform: translateX(-100%);
+        }
+
+        &--soup:checked ~ .menu__group .menu__list {
+            transform: translateX(-200%);
+        }
+
+        &--dessert:checked ~ .menu__group .menu__list {
+            transform: translateX(-300%);
+        }
+
+        &--drink:checked ~ .menu__group .menu__list {
+            transform: translateX(-400%);
+        }
+    }
+
+    &__bottom {
+        margin-top: 60px;
+        min-height: 440px;
+    }
+
+    &__group {
+        display: flex;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    &__list {
+        flex-shrink: 0;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    &__left,
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__right {
+        @include abstracts.screen(lg) {
+            margin-top: 40px;
+        }
+    }
+
+    &__item {
+        min-height: 120px;
+        display: flex;
+        align-items: center;
+        font-family: "Libre Bodoni", serif;
+
+        @include abstracts.screen(lg) {
+            border-bottom: 1px solid #333;
+        }
+
+        @include abstracts.screen(sm) {
+        }
+
+        &-thumb {
+            width: 76px;
+            height: 76px;
+            border-radius: 50%;
+            object-fit: cover;
+
+            @include abstracts.screen(lg) {
+                width: 76px;
+                height: 64px;
+                border-radius: 999px;
+            }
+        }
+
+        &-title {
+            margin-left: 20px;
+            width: 302px;
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 40px;
+
+            @include abstracts.screen(xl) {
+                max-width: 260px;
+                font-size: 2.6rem;
+                font-weight: 500;
+                line-height: 34px;
+            }
+
+            @include abstracts.screen(md) {
+                font-size: 2.2rem;
+            }
+
+            @include abstracts.screen(sm) {
+                max-width: 50%;
+                font-size: 2rem;
+                line-height: 28px;
+            }
+        }
+
+        &-price {
+            margin-left: auto;
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 40px;
+
+            @include abstracts.screen(xl) {
+                font-size: 2.6rem;
+                font-weight: 500;
+                line-height: 36px;
+            }
+
+            @include abstracts.screen(sm) {
+                font-size: 2rem;
+            }
+        }
+    }
+}

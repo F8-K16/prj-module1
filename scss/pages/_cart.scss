@@ -1,0 +1,221 @@
+@use "../abstracts";
+
+.cart {
+    position: relative;
+    margin: 100px 0;
+
+    @include abstracts.screen(md) {
+        margin-top: 60px;
+    }
+
+    &__top {
+        padding: 24px 20px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    &__image {
+        display: flex;
+        align-items: center;
+
+        @include abstracts.screen(md) {
+            position: relative;
+            margin-top: 60px;
+            flex-direction: column;
+            gap: 14px;
+        }
+    }
+
+    &__top-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        & .cart__desc:first-child {
+            @include abstracts.screen(md) {
+                display: none;
+            }
+        }
+    }
+
+    &__ctrl {
+        padding: 4px 20px;
+
+        @include abstracts.screen(md) {
+            position: absolute;
+            top: -60px;
+            left: calc(180% - 30px);
+        }
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+
+        @include abstracts.screen(lg) {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+        }
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 155.556%;
+
+        &--center {
+            text-align: center;
+        }
+    }
+
+    &__desc {
+        line-height: 162.5%;
+
+        @include abstracts.screen(lg) {
+            max-width: 100px;
+        }
+
+        @include abstracts.screen(md) {
+            text-align: center;
+        }
+    }
+
+    &__bottom {
+        margin-top: 100px;
+        width: 50%;
+        margin-left: auto;
+
+        @include abstracts.screen(lg) {
+            width: 100%;
+        }
+
+        &-inner {
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        &-title {
+            margin-bottom: 30px;
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 133.333%;
+
+            @include abstracts.screen(lg) {
+                text-align: center;
+            }
+        }
+
+        &-info {
+            margin-top: 56px;
+
+            &--inline {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            &:not(.cart__bottom-info--first) {
+                margin-top: 30px;
+            }
+
+            &--no-margin {
+                margin-top: 0 !important;
+            }
+        }
+
+        &-text {
+            margin-top: 56px;
+
+            &:not(.cart__bottom-text--first) {
+                margin-top: 30px;
+            }
+
+            &--no-margin {
+                margin-top: 0 !important;
+            }
+        }
+    }
+
+    &__act {
+        margin-top: 56px;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include abstracts.screen(lg) {
+            margin-top: 0;
+            padding: 0;
+        }
+
+        &-left {
+            display: flex;
+            align-items: center;
+            gap: 26px;
+        }
+    }
+
+    &__btn {
+        @include abstracts.flexCenter;
+        margin-top: 30px;
+        height: 42px;
+        padding: 8px 30px;
+        font-size: 1.6rem;
+        font-weight: 600;
+
+        @include abstracts.screen(lg) {
+            padding: 16px;
+        }
+
+        @include abstracts.screen(sm) {
+            font-size: 1.2rem;
+        }
+
+        &:hover {
+            opacity: 0.9;
+        }
+
+        &.cart__act-left {
+            display: flex;
+            align-items: center;
+        }
+
+        &-coupon {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        &-apply {
+            background: #fb8f2c;
+        }
+
+        &-update {
+            background: #fff;
+            color: #111114;
+
+            &:hover {
+                background: #fb8f2c;
+            }
+        }
+
+        &-checkout {
+            margin-top: 22px;
+            width: 100%;
+            background: #fb8f2c;
+
+            @include abstracts.screen(lg) {
+                width: 50%;
+                margin: 40px auto;
+            }
+        }
+    }
+}
+
+.cart__form-group {
+    width: 100% !important;
+    margin-top: 32px !important;
+}
