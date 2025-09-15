@@ -1,15 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-/**
- * Hàm tải template
- *
- * Cách dùng:
- * <div id="parent"></div>
- * <script>
- *  load("#parent", "./path-to-template.html");
- * </script>
- */
+
 function load(selector, path) {
     const cached = localStorage.getItem(path);
     if (cached) {
