@@ -7,7 +7,10 @@
 
     @include abstracts.screen(lg) {
         margin-top: 0;
-        padding: 40px 15px 20px;
+    }
+
+    @include abstracts.screen(md) {
+        padding: 40px 15px;
     }
 
     &__content {
@@ -65,5 +68,9 @@
                 height: 362px;
             }
         }
+    }
+
+    &__slider {
+        margin-top: 40px;
     }
 }

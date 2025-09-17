@@ -31,7 +31,6 @@
     &__desc {
         margin-top: 76px;
         max-width: 211px;
-        line-height: 26px;
 
         @include abstracts.screen(lg) {
             margin-top: 30px;

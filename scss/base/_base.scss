@@ -60,6 +60,12 @@ textarea:-webkit-autofill:hover {
     caret-color: var(--text-color);
 }
 
+input {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+
 image {
     border: none;
 }
@@ -127,4 +133,12 @@ em {
 b,
 strong {
     font-weight: 600;
+}
+
+p {
+    line-height: 26px !important;
+
+    @include abstracts.screen(md) {
+        line-height: 24px !important;
+    }
 }

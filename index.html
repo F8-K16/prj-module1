@@ -738,7 +738,7 @@
                         value has kept Our Best serving families like yours for over 28.
                     </p>
 
-                    <div class="space__content">
+                    <div class="space__content d-sm-none">
                         <div class="space__image">
                             <img src="./assets/img/space/space-1.png" alt="" class="space__thumb space__thumb--small" />
                             <img src="./assets/img/space/space-2.png" alt="" class="space__thumb space__thumb--small" />
@@ -749,6 +749,30 @@
                         <div class="space__image">
                             <img src="./assets/img/space/space-4.png" alt="" class="space__thumb space__thumb--small" />
                             <img src="./assets/img/space/space-5.png" alt="" class="space__thumb space__thumb--small" />
+                        </div>
+                    </div>
+
+                    <div class="slider d-none d-sm-block">
+                        <input type="radio" name="slide" id="s1" checked />
+                        <input type="radio" name="slide" id="s2" />
+                        <input type="radio" name="slide" id="s3" />
+                        <input type="radio" name="slide" id="s4" />
+                        <input type="radio" name="slide" id="s5" />
+
+                        <div class="slider-slides space__slider">
+                            <div class="slider-slide"><img src="./assets/img/space/space-1.png" alt="" /></div>
+                            <div class="slider-slide"><img src="./assets/img/space/space-2.png" alt="" /></div>
+                            <div class="slider-slide"><img src="./assets/img/space/space-6.png" alt="" /></div>
+                            <div class="slider-slide"><img src="./assets/img/space/space-4.png" alt="" /></div>
+                            <div class="slider-slide"><img src="./assets/img/space/space-5.png" alt="" /></div>
+                        </div>
+
+                        <div class="slider-dots">
+                            <label for="s1"></label>
+                            <label for="s2"></label>
+                            <label for="s3"></label>
+                            <label for="s4"></label>
+                            <label for="s5"></label>
                         </div>
                     </div>
                 </section>
@@ -959,10 +983,12 @@
                 <section class="blog">
                     <p class="blog__introduction">Our blog</p>
                     <h2 class="blog__title">Recent Articles</h2>
-                    <div class="blog__inner">
+                    <article class="blog__inner">
                         <div class="row row-cols-2 row-cols-md-1">
                             <div class="col">
-                                <img src="./assets/img/blog/blog-1.jpg" alt="" class="blog__thumb" />
+                                <a href="./blog-page-details.html">
+                                    <img src="./assets/img/blog/blog-1.jpg" alt="" class="blog__thumb" />
+                                </a>
                             </div>
                             <div class="col">
                                 <div class="blog__right">
@@ -980,11 +1006,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </article>
                     <div class="blog__inner blog__inner--second">
-                        <div class="row row-cols-2 row-cols-md-1" style="flex-direction: row-reverse">
+                        <article class="row row-cols-2 row-cols-md-1" style="flex-direction: row-reverse">
                             <div class="col">
-                                <img src="./assets/img/blog/blog-2.jpg" alt="" class="blog__thumb" />
+                                <a href="./blog-page-details.html">
+                                    <img src="./assets/img/blog/blog-2.jpg" alt="" class="blog__thumb" />
+                                </a>
                             </div>
                             <div class="col">
                                 <div class="blog__right">
@@ -1001,7 +1029,7 @@
                                     <a href="#!" class="link">Read Now</a>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
                     <a href="./blog-page.html" class="explore__link">
                         Explore All Blogs

@@ -107,7 +107,6 @@
         &-desc {
             margin-top: 20px;
             width: 383px;
-            line-height: 162.5%;
 
             @include abstracts.screen(md) {
                 width: 100%;
@@ -125,8 +124,8 @@
 
             &::before {
                 position: absolute;
-                bottom: 0;
-                transform: translateY(-65%);
+                bottom: 50%;
+                transform: translateY(50%);
                 left: -20%;
                 content: "";
                 width: 5px;
@@ -151,7 +150,6 @@
             align-items: center;
             gap: 8px;
             font-size: 1.6rem;
-            line-height: 162.5%;
 
             &:hover {
                 font-weight: 600;
@@ -223,6 +221,10 @@
 
             @include abstracts.screen(md) {
                 font-size: 3.6rem !important;
+            }
+
+            @include abstracts.screen(sm) {
+                font-size: 3.4rem !important;
             }
         }
 
@@ -334,7 +336,6 @@
         font-size: 1.4em;
         line-height: 1;
         margin-right: 0.1em;
-        // font-weight: bold;
     }
 
     &__sub {

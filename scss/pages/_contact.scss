@@ -21,7 +21,6 @@
     &__desc {
         margin-bottom: 24px;
         max-width: 500px;
-        line-height: 162.5%;
     }
 
     &__row {
@@ -97,6 +96,10 @@
 .contact__form {
     @include abstracts.screen(lg) {
         margin-top: 80px;
+
+        @include abstracts.screen(md) {
+            margin-top: 50px;
+        }
     }
 
     &-row {

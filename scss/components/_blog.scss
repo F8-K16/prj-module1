@@ -53,6 +53,10 @@
         width: 100%;
         height: 348px;
         object-fit: cover;
+
+        @include abstracts.screen(sm) {
+            height: 296px;
+        }
     }
 
     &__right {
@@ -70,11 +74,19 @@
         @include abstracts.screen(lg) {
             font-size: 2.6rem;
         }
+
+        @include abstracts.screen(md) {
+            line-height: 34px;
+        }
     }
 
     &__sub-desc {
         font-size: 1.8rem;
         line-height: 28px;
+
+        @include abstracts.screen(md) {
+            line-height: 24px;
+        }
     }
 
     &__sub-row {

@@ -26,20 +26,22 @@
             text-align: left;
 
             @include abstracts.screen(sm) {
-                font-size: 3.4rem;
+                text-align: center;
+                font-size: 3.4rem !important;
             }
         }
 
         &-info {
             display: flex;
             align-items: center;
-            justify-content: flex-start;
-            gap: 100px;
+            justify-content: space-between;
             margin-top: 40px;
             color: #111114;
 
             @include abstracts.screen(sm) {
-                justify-content: center;
+                width: 100%;
+                justify-content: space-around;
+                gap: 0;
             }
         }
 
@@ -54,7 +56,7 @@
             margin-top: 10px;
             display: flex;
             align-items: center;
-            gap: 3px;
+            gap: 6px;
         }
 
         &-calendar {

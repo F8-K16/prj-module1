@@ -49,22 +49,23 @@
                             />
                             <img src="./assets/icons/profile.svg" alt="" class="booking__form-input-icon" />
                         </div>
-                        <p class="form__error">Please fill your name</p>
                     </div>
 
                     <div class="booking__form-group">
                         <div class="booking__form-text-input">
                             <input
-                                type="tel"
+                                type="text"
                                 name=""
                                 id=""
                                 placeholder="Phone number"
                                 class="form__input booking__form-input"
                                 minlength="10"
+                                inputmode="numeric"
+                                pattern="[0-9]*"
+                                oninput="this.value = this.value.replace(/[^0-9]/g, '')"
                             />
                             <img src="./assets/icons/phone.svg" alt="" class="booking__form-input-icon" />
                         </div>
-                        <p class="form__error">Please fill correct your phone number</p>
                     </div>
 
                     <div class="booking__form-group">
@@ -79,7 +80,6 @@
                             />
                             <img src="./assets/icons/message.svg" alt="" class="booking__form-input-icon" />
                         </div>
-                        <p class="form__error">Email is not correct format</p>
                     </div>
                     <div class="booking__form-group">
                         <div class="booking__form-text-input">
@@ -95,9 +95,7 @@
                                 <option class="booking__form-option" value="5">5 People</option>
                                 <option class="booking__form-option" value="other">More</option>
                             </select>
-                            <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
                         </div>
-                        <p class="form__error">Please select number of people</p>
                     </div>
                     <div class="booking__form-group">
                         <div class="booking__form-text-input">
@@ -111,20 +109,17 @@
                                 />
                                 <img src="./assets/icons/calendar.svg" alt="" class="booking__form-input-icon" />
                             </div>
-                            <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
                         </div>
-                        <p class="form__error">Please choose the day you will come our restaurant</p>
                     </div>
                     <div class="booking__form-group">
                         <div class="booking__form-text-input">
                             <input type="time" name="time" id="timepicker" class="form__input booking__form-input" />
                             <img src="./assets/icons/time.svg" alt="" class="booking__form-input-icon" />
                         </div>
-                        <p class="form__error">Please choose the day you will come our restaurant</p>
                     </div>
 
                     <div class="booking__form-bottom">
-                        <button class="booking__form-btn form__submit-btn">Reserve Your Table Now</button>
+                        <button type="submit" class="booking__form-btn form__submit-btn">Reserve Your Table Now</button>
                     </div>
                 </form>
             </div>
