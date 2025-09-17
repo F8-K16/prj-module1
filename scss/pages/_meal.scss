@@ -1,22 +1,14 @@
 @use "../abstracts";
 
 .meal {
-    margin: 90px 0 100px;
+    margin: calc(var(--header-height) + 90px) 0 100px;
 
     @include abstracts.screen(lg) {
-        margin: 60px 0;
+        margin: calc(var(--header-height) + 60px) 0;
     }
 
     @include abstracts.screen(md) {
-        margin: 40px 0 60px;
-    }
-
-    &__inner {
-        padding-top: 60px;
-
-        @include abstracts.screen(lg) {
-            padding-top: 0;
-        }
+        margin: calc(var(--header-height) + 40px) 0 60px;
     }
 
     &__title {

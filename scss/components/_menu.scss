@@ -52,8 +52,8 @@
         &--soup:checked ~ .menu__choice .menu__choice--soup,
         &--dessert:checked ~ .menu__choice .menu__choice--dessert,
         &--drink:checked ~ .menu__choice .menu__choice--drink {
-            color: #fb8f2c;
-            border-bottom: 1px solid #fb8f2c;
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--primary-color);
             opacity: 1;
         }
 

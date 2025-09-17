@@ -36,7 +36,7 @@
             align-items: center;
             justify-content: space-between;
             margin-top: 40px;
-            color: #111114;
+            color: var(--bg-color);
 
             @include abstracts.screen(sm) {
                 width: 100%;

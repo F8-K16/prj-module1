@@ -16,7 +16,7 @@
         margin: 0 auto;
 
         &:focus + label {
-            color: #fb8f2c;
+            color: var(--primary-color);
         }
 
         &--inline {
@@ -147,8 +147,8 @@
         }
 
         & [type="checkbox"]:checked ~ &-label::before {
-            background: #fb8f2c;
-            border-color: #fb8f2c;
+            background: var(--primary-color);
+            border-color: var(--primary-color);
         }
 
         & [type="checkbox"]:checked ~ &-label::after {
@@ -222,7 +222,7 @@
 
         &--current {
             font-weight: 500;
-            background: rgba($color: #fb8f2c, $alpha: 0.6);
+            background: rgba($color: var(--primary-color), $alpha: 0.6);
         }
 
         &:hover:not(&--current) {

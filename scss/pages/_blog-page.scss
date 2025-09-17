@@ -1,11 +1,11 @@
 @use "../abstracts";
 
 .blog-page {
-    padding: 0 !important;
-    margin: 80px 0 100px !important;
+    padding: 0;
+    margin: calc(var(--header-height) + 80px) 0 100px;
 
     @include abstracts.screen(md) {
-        margin: 40px 0 50px !important;
+        margin: calc(var(--header-height) + 40px) 0 50px;
     }
 
     &__thumb {
@@ -167,7 +167,7 @@
             cursor: pointer;
 
             &--current {
-                background: #fb8f2c;
+                background: var(--primary-color);
                 cursor: auto;
                 user-select: none;
             }

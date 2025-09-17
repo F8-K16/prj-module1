@@ -1,14 +1,14 @@
 @use "../abstracts";
 
 .about-page {
-    margin: 100px 0;
+    margin: calc(var(--header-height) + 100px) 0;
 
     @include abstracts.screen(md) {
-        margin-top: 80px;
+        margin-top: calc(var(--header-height) + 80px);
     }
 
     @include abstracts.screen(md) {
-        margin-top: 40px;
+        margin-top: calc(var(--header-height) + 40px);
     }
 
     &__title {
@@ -156,7 +156,7 @@
             width: 82px;
             height: 82px;
             border-radius: 50%;
-            background: #fb8f2c;
+            background: var(--primary-color);
         }
 
         &-img {

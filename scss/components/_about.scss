@@ -24,7 +24,7 @@
 
     &__right-title {
         text-align: center;
-        color: #111114;
+        color: var(--bg-color);
     }
 
     &__left {
@@ -46,7 +46,7 @@
         @include abstracts.flexCenter;
         flex-direction: column;
         min-height: 360px;
-        background: #fb8f2c;
+        background: var(--primary-color);
 
         &-content {
             width: 60%;
@@ -57,7 +57,7 @@
 
         &-text {
             margin-top: 14px;
-            color: #111114;
+            color: var(--bg-color);
         }
     }
 }

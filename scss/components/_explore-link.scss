@@ -4,7 +4,7 @@
     @include abstracts.flexCenter;
     gap: 13px;
     margin-top: 60px;
-    color: #fb8f2c;
+    color: var(--primary-color);
 
     &-icon {
         transition: translate 0.3s;

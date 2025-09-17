@@ -116,7 +116,7 @@
         max-width: 169px;
         height: 42px !important;
         font-weight: 600 !important;
-        background: #fb8f2c !important;
+        background: var(--primary-color) !important;
     }
 
     &__type {
@@ -158,7 +158,7 @@
 
         &--current {
             color: #fff;
-            border-bottom: 1px solid #fb8f2c;
+            border-bottom: 1px solid var(--primary-color);
         }
 
         &:not(.product-tab__item--current) {

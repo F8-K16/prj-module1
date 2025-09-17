@@ -1,7 +1,11 @@
 @use "../abstracts";
 
 .checkout {
-    margin-top: 96px;
+    margin-top: calc(var(--header-height) + 96px);
+
+    @include abstracts.screen(sm) {
+        margin-top: calc(var(--header-height) + 66px);
+    }
 
     &__info {
         &-title {
@@ -97,7 +101,7 @@
 
     &__policy {
         font-weight: normal;
-        color: #fb8f2c;
+        color: var(--primary-color);
 
         &:hover {
             cursor: pointer;

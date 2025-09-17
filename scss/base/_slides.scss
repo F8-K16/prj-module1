@@ -67,5 +67,5 @@
 #s3:checked ~ .slider-dots label[for="s3"],
 #s4:checked ~ .slider-dots label[for="s4"],
 #s5:checked ~ .slider-dots label[for="s5"] {
-    background: #fb8f2c;
+    background: var(--primary-color);
 }

@@ -2,10 +2,10 @@
 
 .cart {
     position: relative;
-    margin: 100px 0;
+    margin: calc(var(--header-height) + 100px) 0;
 
     @include abstracts.screen(md) {
-        margin-top: 60px;
+        margin-top: calc(var(--header-height) + 60px);
     }
 
     &__top {
@@ -190,22 +190,22 @@
         }
 
         &-apply {
-            background: #fb8f2c;
+            background: var(--primary-color);
         }
 
         &-update {
             background: #fff;
-            color: #111114;
+            color: var(--bg-color);
 
             &:hover {
-                background: #fb8f2c;
+                background: var(--primary-color);
             }
         }
 
         &-checkout {
             margin-top: 22px;
             width: 100%;
-            background: #fb8f2c;
+            background: var(--primary-color);
 
             @include abstracts.screen(lg) {
                 width: 50%;

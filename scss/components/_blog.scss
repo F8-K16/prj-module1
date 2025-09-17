@@ -1,13 +1,6 @@
 @use "../abstracts";
 
 .blog {
-    margin-top: 94px;
-    padding: 56px 0 62px;
-
-    @include abstracts.screen(lg) {
-        margin-top: 0;
-    }
-
     &__introduction {
         text-align: center;
         margin-bottom: 10px;
