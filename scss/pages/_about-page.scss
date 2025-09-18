@@ -5,9 +5,10 @@
 
     @include abstracts.screen(md) {
         margin-top: calc(var(--header-height) + 80px);
+        margin-bottom: 70px;
     }
 
-    @include abstracts.screen(md) {
+    @include abstracts.screen(sm) {
         margin-top: calc(var(--header-height) + 40px);
     }
 

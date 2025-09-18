@@ -55,7 +55,11 @@
         background: #fff;
 
         &:hover {
-            background: rgba(251, 143, 44, 0.9);
+            background: rgba(251, 143, 44, 1);
+        }
+
+        &:hover img {
+            filter: var(--text-color);
         }
 
         @include abstracts.screen(xl) {
